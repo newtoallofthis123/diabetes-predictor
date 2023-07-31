@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{data.prediction}} - Diabetes Predictor
+{% endblock %}
+{% block body %}
+    <div class="py-8 px-4">
+        <h1 class="text-7xl font-bold py-4">
+            {{data.prediction}}
+        </h1>
+        <p class="py-2 text-2xl">
+            Data provided with accuracy of {{data.accuracy}}
+        </p>
+    </div>
+{% endblock %}

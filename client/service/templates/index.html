@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container mx-auto py-8 px-4">
+    <h1 class="text-3xl font-bold mb-4">
+        Enter Your Data:
+    </h1>
+    <form action="/submit" class="grid grid-cols-2 gap-4" method="post">
+        <div class="py-2">
+            <label class="text-xl font-bold" for="pregnancies">Pregnancies:</label>
+            <input class="border-2 border-gray-500 p-1 md:w-20 rounded-lg" type="text" name="pregnancies" id="pregnancies" min="0" max="20" value="0">
+        </div>
+        <div class="py-2">
+            <label class="text-xl font-bold" for="glucose">Glucose: in mg/dL</label>
+            <input class="border-2 border-gray-500 p-1 md:w-20 rounded-lg" type="text" name="glucose" id="glucose" min="0" max="300" value="145">
+        </div>
+        <div class="py-2">
+            <label class="text-xl font-bold" for="blood_pressure">Blood Pressure: in mm Hg</label>
+            <input class="border-2 border-gray-500 p-1 md:w-20 rounded-lg" type="text" name="blood_pressure" id="blood_pressure" min="0" max="300" value="68">
+        </div>
+        <div class="py-2">
+            <label class="text-xl font-bold" for="skin_thickness">Skin Thickness: in mm</label>
+            <input class="border-2 border-gray-500 p-1 md:w-20 rounded-lg" type="text" name="skin_thickness" id="skin_thickness" min="0" max="200" value="0">
+        </div>
+        <div class="py-2">
+            <label class="text-xl font-bold" for="insulin">Insulin: in IU/mL</label>
+            <input class="border-2 border-gray-500 p-1 md:w-20 rounded-lg" type="text" name="insulin" id="insulin" min="0" max="200" value="0">
+        </div>
+        <div class="py-2">
+            <label class="text-xl font-bold" for="bmi">BMI: in kg/m^2</label>
+            <input class="border-2 border-gray-500 p-1 md:w-20 rounded-lg" type="text" name="bmi" id="bmi" min="0" max="40" value="23.5">
+        </div>
+        <div class="py-2">
+            <label class="text-xl font-bold" for="diabetes_pedigree_function">Diabetes Pedigree Function: calculated with family history</label>
+            <input class="border-2 border-gray-500 p-1 md:w-20 rounded-lg" type="text" name="dpf" id="dpf" min="0" max="5" value="0.627" >
+        </div>
+        <div class="py-2">
+            <label class="text-xl font-bold" for="age">Age: in years</label>
+            <input class="border-2 border-gray-500 p-1 md:w-20 rounded-lg" type="text" name="age" id="age" min="0" max="120" value="25">
+        </div>
+        <button type="submit" class="col-span-2 py-4 px-4 bg-blue-500 text-white rounded-lg font-bold hover:bg-blue-600">
+            Submit
+        </button>
+    </form>
+</div>
+{% endblock %}
