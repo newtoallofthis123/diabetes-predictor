@@ -74,4 +74,3 @@ If you want to contribute, you can fork the repository and make a pull request. 
 ## License
 
 This project is licensed under the MIT License. You can read more about it in the [LICENSE](LICENSE) file.
-```
